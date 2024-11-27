@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: python commands
         run: |
-          import platform
-          print(platform.processor())
+	python -c "import platform; print(platform.processor())"
         shell: python
   run-windows-command:
     runs-on: windows-latest
